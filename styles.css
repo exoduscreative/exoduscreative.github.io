@@ -208,6 +208,7 @@ a {
 }
 
 #copyright {
+  color: #13216a;
 	font-size: .6rem;
 	padding-left: 5rem;
 	line-height: 3.5rem;
@@ -277,7 +278,6 @@ a {
 /*----------------------------------------------------------*/
 /*----------------MOBILE & TABLET VIEW----------------------*/
 /*----------------------------------------------------------*/
-/*----------------------------------------------------------*/
 
 
 @media screen and (max-width: 875px) {
@@ -325,10 +325,8 @@ a {
 	#hamburger, #exit-menu {
 	  width: 50px;
 		cursor: pointer;
-		/*color: #ffffff;*/
 		color: #13216a;
 		font-size: 2.5rem;
-		/*float: right;*/
 	}
 	
 	#hamburger, #exit-menu, #mobile-logo {
