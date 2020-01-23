@@ -21,7 +21,7 @@ $(document).ready(function() {
 
 	// OPEN MODAL IMAGE (DESKTOP)
 	$('.image').click(function() {
-		if ($(window).width() > 750) {
+		if ($(window).width() > 1024) {
 			$('#modal').attr('style', 'display: block');
 			$('#modal-img').attr('src', $(this).find('img').attr('src'));
 			$('#close').click(function() {

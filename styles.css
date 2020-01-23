@@ -1,4 +1,4 @@
-#mobile-header, #mobile-menu, .index-links {
+#mobile-header, #mobile-menu, #index-logo-wrapper-mobile {
 	display: none;
 }
 
@@ -201,6 +201,7 @@ a {
 #social-links {
 	float: right;
 	line-height: 3.5rem;
+	font-size: 1.75rem;
 }
 
 #social-links li {
@@ -280,15 +281,25 @@ a {
 /*----------------------------------------------------------*/
 
 
-@media screen and (max-width: 875px) {
+/*@media screen and (max-width: 875px) {*/
+@media screen and (max-width: 1366px) {
 
-	.header, #footer {
+	.header, #footer, #index-logo-wrapper {
 		display: none;
 	}
 
 	.arrows {
 		visibility: hidden;
 	}
+	
+	#index-logo-wrapper-mobile {
+	  padding-top: 2rem;
+	  height: 80vh;
+	  display: flex;
+	  flex-direction: column;
+	  justify-content: space-between;
+  }
+
 
 	#index-logo {
 		width: 80%;
@@ -298,7 +309,7 @@ a {
 	.index-links {
 		display: block;
 		text-align: center;
-		margin: 3.5rem 0;
+		/*margin: 3.5rem 0;*/
 	  font-size: 1.5rem;
 	  color: #13216a;
 	}
@@ -306,7 +317,6 @@ a {
 	#mobile-header {
 	  display: flex;
 	  align-items: center;
-		z-index: 10;
 		height: 10vh;
 		position: relative;
 	}
@@ -323,6 +333,8 @@ a {
 	}
 
 	#hamburger, #exit-menu {
+	  position: relative;
+	  z-index: 10;
 	  width: 50px;
 		cursor: pointer;
 		color: #13216a;
@@ -344,17 +356,21 @@ a {
 	#mobile-menu {
 		display: none;
 		position: absolute;
-		z-index: 1;
+		z-index: 2;
 		height: 100vh;
 		width: 100vw;
-		/*background: linear-gradient(123.2deg, #29006C 2.65%, #EF008F 88.92%);*/
 		background: linear-gradient(123.2deg, #EF008F 2.65%, #29006C 88.92%);
 	}
 
 	#mobile-links {
+	  display: flex;
+	  flex-direction: column;
+	  justify-content: space-between;
+	  height: 80vh;
 		text-align: center;
-	    font-size: 2rem;
-	    margin-top: 8rem;
+    font-size: 2rem;
+    margin-top: 8rem;
+	    
 	}
 
 	#mobile-links li {
@@ -367,6 +383,7 @@ a {
 	}
 
 	#scrolling-wrapper {
+	  /*z-index: -1;*/
 		height: 90vh;
 		padding: 0;
 		overflow-x: hidden;
@@ -400,6 +417,8 @@ a {
 		text-align: center;
 		padding: 0;
 	}
-
-
+	
 }
+
+
+
