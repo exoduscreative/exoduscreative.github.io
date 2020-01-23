@@ -282,7 +282,7 @@ a {
 
 
 /*@media screen and (max-width: 875px) {*/
-@media screen and (max-width: 1366px) {
+@media screen and (max-width: 1024px) {
 
 	.header, #footer, #index-logo-wrapper {
 		display: none;
@@ -366,16 +366,11 @@ a {
 	  display: flex;
 	  flex-direction: column;
 	  justify-content: space-between;
-	  height: 70vh;
+	  height: 75vh;
 		text-align: center;
     font-size: 2rem;
-    margin-top: 1rem;
+    margin-top: 4rem;
 	    
-	}
-
-	#mobile-links li {
-		transition: .6s;
-		margin: 2rem 0;
 	}
 	
 	#mobile-links a {
@@ -383,7 +378,6 @@ a {
 	}
 
 	#scrolling-wrapper {
-	  /*z-index: -1;*/
 		height: 90vh;
 		padding: 0;
 		overflow-x: hidden;
