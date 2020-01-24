@@ -27,7 +27,7 @@
 		<ul id="nav-links">
 			<li><a href="design.html" id="design">DESIGN</a></li>
 			<li><a href="photo.html" id="photography">PHOTOGRAPHY</a></li>
-			<li><a href="#" id="contact">CONTACT</a></li>
+			<li><a href="contact.html" id="contact">CONTACT</a></li>
 		</ul>
 	</div>
 
@@ -41,7 +41,7 @@
 				<a href="photo.html">PHOTOGRAPHY</a>
 			</li>
 			<li>
-				<a href="#">CONTACT</a>
+				<a href="contact.html">CONTACT</a>
 			</li>
 			<li>
 				<a href="https://www.facebook.com/exoduscreativefl/" target="_blank"><i class="fab fa-facebook"></i></a>
@@ -60,23 +60,28 @@
 		<i id="exit-menu" class="fas fa-times"></i>
 	</div>
 
-	<!-- SCROLLING WRAPPER FOR PHOTOS/ART DISPLAY -->
-	<div id="scrolling-wrapper" class="disable-scrollbars">
-  <form action="https://formspree.io/xknjpkol" method="POST">
-    <label>
-      Your email:
-      <input type="text" name="_replyto">
-    </label>
-    <label>
-      Your message:
-      <textarea name="message"></textarea>
-    </label>
-  
-    <!-- your other form fields go here -->
-  
-    <button type="submit">Send</button>
-  </form>
-
+	<!-- WRAPPER FOR CONTACT INFO AND FORM -->
+	<div id="contact-wrapper" class="disable-scrollbars">
+	  <div id="contact-page">
+	    <div id="contact-info">
+	      <div class="contact-entries">
+	        <i class="fas fa-envelope"></i>
+	        <p>exoduscreativefl@gmail.com</p>
+	      </div>
+	      <div class="contact-entries">
+	        <i class="fas fa-phone-alt"></i>
+	        <p>(754) 779-5825</p>
+	      </div>
+	      <div></div>
+	    </div>
+      <form action="https://formspree.io/xknjpkol" method="POST">
+        <input id="email" type="email" name="email" placeholder="Your E-Mail">
+        <textarea id="textarea" name="message" placeholder="Your Message..."></textarea>
+    		<input type="hidden" name="_subject" value="New submission!" />
+    		<input type="text" name="_gotcha" style="display:none" />
+    		<input type="submit" id="submit-button" value="SEND"/>
+      </form>
+    </div>
 	</div>
 
 

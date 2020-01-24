@@ -93,6 +93,10 @@ a {
 	position: relative;
 }
 
+#nav-links li a:hover {
+	text-decoration: underline;
+}
+
 #nav-links li {
 	padding-left: 3rem;
 }
@@ -216,8 +220,82 @@ a {
 	letter-spacing: .2rem;
 }
 
-#nav-links li a:hover {
-	text-decoration: underline;
+#contact-wrapper {
+  color: #13216a;
+	position: relative;
+	height: 60vh;
+	overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+  padding-bottom: 3.5rem;
+  padding-top: 4rem;
+}
+
+#contact-page {
+  margin: 0 auto;
+  height: 100%;
+  width: 50%;
+}
+
+#contact-info {
+  height: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.contact-entries {
+  display: flex;
+  line-height: 2rem;
+}
+
+.contact-entries i {
+  font-size: 2rem;
+}
+
+.contact-entries p {
+  letter-spacing: .15rem;
+  margin-left: 1rem;
+}
+
+form {
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#email:focus, #textarea:focus {
+  outline: none;
+}
+
+#email, #textarea {
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: .15rem;
+	padding: 1rem;
+	box-sizing: border-box;
+	width: 100%;
+	margin-bottom: 1rem;
+}
+
+#textarea {
+  height: 6rem;
+}
+
+#submit-button {
+  transition: .5s;
+  cursor: pointer;
+  height: 3rem;
+  border: 0;
+  border-radius: 2rem;
+  color: #FFFFFF;
+  font-weight: bold;
+  letter-spacing: 1rem;
+  background: linear-gradient(123.2deg, #EF008F 2.65%, #29006C 88.92%);
+}
+
+#submit-button:hover {
+  opacity: .8;
 }
 
 /* MODAL BACKGROUND */
@@ -404,6 +482,10 @@ a {
 
 	.image:hover {
 		cursor: default;
+	}
+	
+	#contact-page {
+	  width: 90%;
 	}
 
 	#copyright {
